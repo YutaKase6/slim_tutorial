@@ -82,8 +82,23 @@ gitignore。
 
 ## Slim
 公式サイトより  
-様々なファイルや
+様々なファイルやモジュールなどを自動で生成してくれる。
 
 ```
 $ composer create-project slim/slim-skeleton slim_tutorial
 ```
+
+## 実行
+
+作成したディレクトリへ移動し、以下のコマンドで簡易的に実行可能。  
+
+```
+$ php -S localhost:8080 -t public public/index.php
+```
+
+ちなみにskeletonで作成されたcomposer.jsonにスクリプトが書かれているので以下のコマンドでも動く。  
+
+```
+$ composer start
+```
+
